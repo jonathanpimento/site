@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Pimento</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter/3.19.3/inter.css" rel="stylesheet">
+    <title>Jonathan Pimento - Designer & Product Leader | AI & Creativity</title>
+    <link rel="icon" type="image/x-icon" href="https://jonathanpimento.github.io/site/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jonathanpimento.github.io/site/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jonathanpimento.github.io/site/assets/favicon-16x16.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jonathan Pimento - Principal Product Manager at Adobe leading generative AI initiatives. Expertise in product management, creative tools, and AI-powered design solutions including Adobe Podcast and Firefly.">
+    <meta name="keywords" content="product management, generative AI, Adobe, creative tools, AI design, Adobe Podcast, Adobe Firefly, product strategy, design innovation">
+    <meta name="author" content="Jonathan Pimento">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jonathan Pimento | Product Manager & Designer - AI Creative Tools">
+    <meta property="og:description" content="Principal Product Manager at Adobe building generative AI tools for creators. Leading Adobe Podcast and previously Adobe Firefly, empowering storytellers and designers.">
+    <meta property="og:image" content="https://jonathanpimento.github.io/site/assets/jp.png">
+    <meta property="og:url" content="https://www.jonathanpimento.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jonathan Pimento | Product Manager & Designer - AI Creative Tools">
+    <meta name="twitter:description" content="Principal Product Manager at Adobe building generative AI tools for creators. Leading Adobe Podcast and previously Adobe Firefly, empowering storytellers and designers.">
+    <meta name="twitter:image" content="https://jonathanpimento.github.io/site/jp.png">
+
+<!-- Additional SEO Tags -->
+<link rel="canonical" href="https://www.jonathanpimento.com">
     <link rel="stylesheet" href="https://use.typekit.net/ikt6iqa.css">
     <style>
         * {
@@ -12,7 +35,10 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        a {
+            color:#666;
+            text-decoration: none;;
+        }
         body {
             font-family: "ivystyle-sans", sans-serif;
             font-weight: 100;
@@ -21,13 +47,11 @@
             color: #f4f1e9;
             min-height: 100vh;
         }
-
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
         }
-
         header {
             display: flex;
             justify-content: space-between;
@@ -37,13 +61,11 @@
             font-weight: 700;
             font-style: normal;
                 }
-
         .logo {
             font-size: 1.2rem;
             font-weight: 500;
             letter-spacing: -0.5px;
         }
-
         h1 {
             font-size: 6rem;
             line-height: 1.1;
@@ -53,32 +75,47 @@
             font-family: "ivypresto-headline", serif;
             font-weight: 200;
             font-style: normal;
-            color:#5b77cb;
+            color:#5bcba3;
         }
-
         h1 .highlight {
             color: #fefcdd;
         }
-
-        .testimonials {
+        .copy-container {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
         }
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+            margin-top:1rem;
+        }
 
-        .testimonial {
+        .copy {
             max-width: 100%;
         }
 
-        .testimonial-text {
+        .copy-text {
             line-height: 1.5;
             margin-top: 1.5rem;
-            opacity: 0.9;
+            margin-bottom:2rem;
+            color: #fefcdd;
+        }
+        .ai-text {
+            line-height: 1.5;
+            margin-top: 1rem;
+            color: #fefcdd;
+
+
+        }
+        .ai-text a{
+            color:#fefcdd;
         }
 
         .author-name {
             font-weight: 500;
-            color: #f4f1e9;
+            color: #fefcdd;
             text-decoration: none;
             
         }
@@ -92,34 +129,35 @@
         .footer-item {
             display: block;
             color: #666;
-            margin-top: 2rem;
+            margin-top: 3rem;
             margin-bottom:2rem;
-            font-family: "ivystyle-sans", sans-serif;
             letter-spacing: 0.5px;
-        }
-        .project-row{
-            padding: 10px;
-            border-radius: 5px;
-            width: auto;
-            color: #fefcdd;
         }
 
         /* Tablet Breakpoint */
         @media (max-width: 1024px) {
-            .testimonials {
+            .copy-container {
                 grid-template-columns: 1fr;
                 gap: 3rem;
+                padding: 1rem 3rem 1rem 3rem;
             }
 
             h1 {
-                font-size: 3.5rem;
+                font-size: 5.5rem;
+                padding: 1rem 3rem 1rem 3rem;
+                margin-bottom: 1rem;
+            }
+            .footer {
+                padding: 1rem 3rem 1rem 3rem;
             }
         }
 
         /* Mobile Breakpoint */
         @media (max-width: 640px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 4.5rem;
+                padding: 3rem;
+                margin-bottom: 0px;
             }
 
             .container {
@@ -129,63 +167,48 @@
             header {
                 margin-bottom: 4rem;
             }
+            .footer {
+                padding: 1rem 3rem 1rem 3rem;
+            }
+        }
+        .ai{
+            width:25px;
+            vertical-align: middle
+        }
+        .footer-item a {
+            padding-right: 22px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-
-        <h1><span class="highlight">A non-dev's experiments with</span> Generative AI & Code</h1>
-
-        <div class="testimonials">
-            <div class="testimonial">
-                <a href="https://www.linkedin.com/in/jonathanpimento/" class="author-name">Summary
-                    <span class="author-role">Jonathan Pimento</span>
-                <p class="testimonial-text">A collection of some my favorite generative AI projects created using AI coding tools. An engineer by degree I chose to focus on design and experience rather than coding. With the advent of AI and the new era of AI tools that aid coding.</p>
-                <div class="testimonial">
-                    <span class="footer-item"><a href="www.jonathanpimento.com"> ←  Jonathan Pimento </a></span>     
-            </div>    
+        <h1><span class="highlight"> Designer & Product Manager</span> building tools to amplify creativity</h1>
+        <div class="copy-container">
+            <div class="copy">
+                <div class="author-name">Made with AI</div>
+                    <span class="author-role">Generative AI and LLM Experiments →</span>
             </a>
+            <p class="copy-text">An exciting dive into the creative potential of AI coding tools and LLMs—unlocking possibilities that once felt out of reach. These experiments explore how AI can transform everyday tasks, opening doors to new ideas and accelerating outcomes in ways I never imagined possible.</p>
             </div>
-
-            <div class="projects">
-              <div class="project-row">
-                <p>  ↗ Analyzing spending habits and rainy day budgets</p>
-              </div>
-              <div class="project-row">
-                <p> ↗ Generating Podcast insights and key summaries</p>
-              </div>
-              <div class="project-row">
-                <p> ↗ Mixing audio on the web using web audio APIs</p>
-              </div>
-              <div class="project-row">
-                <p> ↗ Estimating cloud service cost traffic estimation and cost </p>
-             </div>
-             <div class="project-row">
-                <p> ↗ AI host for an interactive Podcast interview </p>
-             </div>
-             <div class="project-row">
-                <p> ↗ Conversation transcript analysis using pdf.js  </p>
-             </div>
-             <div class="project-row">
-                <p>  ↗ Analyzing spending habits and rainy day budgets</p>
-              </div>
-              <div class="project-row">
-                <p> ↗ Generating Podcast insights and key summaries</p>
-              </div>
-              <div class="project-row">
-                <p> ↗ Mixing audio on the web using web audio APIs</p>
-              </div>
-              <div class="project-row">
-                <p> ↗ Estimating cloud service cost traffic estimation and cost </p>
-             </div>
-             <div class="project-row">
-                <p> ↗ AI host for an interactive Podcast interview </p>
-             </div>
-             <div class="project-row">
-                <p> ↗ Conversation transcript analysis using pdf.js  </p>
-             </div>
+            <div class="copy">
+                <a href="https://www.behance.net/jonathanpimento/" class="author-name">Made by hand
+                    <span class="author-role">UX design & illustrations →</span>
+                <p class="copy-text">A showcase of UX design projects and illustrations crafted over the years—using tools I worked on for creatives focused on print, web, and digital surfaces. Some pieces stem from personal exploration, while others were created as demo assets for Adobe MAX keynotes. </p>
+                </a>
             </div>
     </div>
+    <div class="copy-container">
+        <div class="copy">
+    <p class="ai-text"><img src="ai.png" class="ai"><a href="jonathanpimento.github.com/site">Analyzing spending habits and generating budgets</a></p>
+    <p class="ai-text"><img src="ai.png" class="ai"><a href="jonathanpimento.github.com/site">Generating insights and summaries from a Podcast</a></p>
+    <p class="ai-text"><img src="ai.png" class="ai"><a href="jonathanpimento.github.com/site">Generate a Podcast conversation with an AI Host </a></p>
+    <p class="ai-text"><img src="ai.png" class="ai"><a href="jonathanpimento.github.com/site">Generate service estimates and cost based on RPM </a></p>
+    <p class="ai-text"><img src="ai.png" class="ai"><a href="jonathanpimento.github.com/site">Personalized year in a wrap based on credit </a></p>
+</div>
+</div>
+<div class="footer">
+    <span class="footer-item"><a href="https://www.jonathanpimento.com">Jonathan Pimento</a>   <a href="https://www.linkedin.com/in/jonathanpimento/">LinkedIn</a>  <a href="https://www.behance.com/jonathanpimento/">Behance</a>  <a href="https://jonathanpimento.substack.com/">Substack</a>  </span>     
+</div>
+</div>
 </body>
 </html>
