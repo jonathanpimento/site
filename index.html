@@ -12,6 +12,13 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
+        a {
+            color:#666;
+            text-decoration: none;;
+        }
+
+
 
         body {
             font-family: "ivystyle-sans", sans-serif;
@@ -65,6 +72,12 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+            margin-top:1rem;
+        }
 
         .testimonial {
             max-width: 100%;
@@ -93,7 +106,7 @@
         .footer-item {
             display: block;
             color: #666;
-            margin-top: 2rem;
+            margin-top: 3rem;
             margin-bottom:2rem;
             font-family: "ivystyle-sans", sans-serif;
             letter-spacing: 0.5px;
@@ -127,6 +140,9 @@
             header {
                 margin-bottom: 4rem;
             }
+            .footer {
+                padding: 1rem 3rem 1rem 3rem;
+            }
         }
     </style>
 </head>
@@ -156,11 +172,10 @@
                 <p class="testimonial-text">Sharing lessons and stories from a decade of building products. From the skills and mindset needed to navigating the PM role to managing organizational complexity and advancing career growth, these reflections offer guidance for those on the journey.</p>
                 </a>
             </div>
-            <div class="testimonial">
-                <span class="footer-item">Jonathan Pimento</span>     
-        </div>
     </div>
-
-    
+    <div class="footer">
+        <span class="footer-item">Jonathan Pimento  *  <a href="https://www.linkedin.com/in/jonathanpimento/">LinkedIn</a> * <a href="https://www.linkedin.com/in/jonathanpimento/">Behance</a>  *  <a href="https://www.linkedin.com/in/jonathanpimento/">Substack</a></span>     
+</div>
+</div>
 </body>
 </html>
